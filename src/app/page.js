@@ -19,6 +19,7 @@ export default function Home() {
             <li>App Router Moderno</li>
             <li>Renderização Híbrida (SSR / SSG)</li>
             <li>Otimização Automática de Performance</li>
+            <li>Rotas baseadas em Arquivos (File-system Routing)</li> {/* Novo item */}
           </ul>
         </section>
       </main>
