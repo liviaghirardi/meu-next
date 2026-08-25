@@ -24,8 +24,8 @@ export default function Home() {
         </section>
       </main>
 
-      <footer style={styles.footer}>
-        <p>&copy; 2026 - Aluna: Lívia Ghirardi</p>
+     <footer style={styles.footer}>
+        <p>&copy; 2026 - Aluna: Lívia Ghirardi | Projeto Next.js Concluído com Sucesso</p>
       </footer>
     </div>
   );
