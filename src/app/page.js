@@ -5,6 +5,7 @@ export default function Home() {
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.title}>Landing Page Interativa - Next.js</h1>        <p>Projeto Desenvolvido para a Atividade Prática de Frameworks Front-end (SENAI)</p>
+        <p style={{ color: '#0070f3', fontWeight: 'bold' }}>Status: Concluído e Versionado</p>
       </header>
 
       <main style={styles.content}>
