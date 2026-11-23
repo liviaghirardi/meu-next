@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Recursos do Next.js — Projeto 04
 
-## Getting Started
+Landing page feita com **Next.js (App Router)** para a atividade de Frameworks Front-end do SENAI.
+A página apresenta os principais recursos do Next.js. Cada recurso tem a sua própria página de detalhes.
 
-First, run the development server:
+## O que o projeto usa
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Componentes reutilizáveis**: `Header`, `Footer`, `RecursoCard`, `ListaRecursos`
+- **Rotas por arquivos**: `/`, `/sobre` e a rota dinâmica `/recursos/[slug]`
+- **Geração estática (SSG)**: `generateStaticParams` gera uma página para cada recurso no build
+- **Client Component com `useState`**: filtro de recursos por categoria
+- **Metadata por página**: título e descrição próprios em cada rota
+- **Layout responsivo**: CSS Modules e grid de 1, 2 ou 3 colunas, conforme a largura da tela
+- **Tema claro/escuro**: segue a preferência do sistema operacional
+
+## Estrutura
+
+```
+src/
+├── app/
+│   ├── layout.js               # layout raiz (Header + Footer)
+│   ├── page.js                 # página inicial
+│   ├── not-found.js            # página 404
+│   ├── sobre/page.js           # rota /sobre
+│   └── recursos/[slug]/page.js # rota dinâmica
+├── components/                 # componentes reutilizáveis
+└── data/recursos.js            # dados exibidos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como rodar
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O projeto é publicado na [Vercel](https://vercel.com), conectada a este repositório do GitHub. Cada push na branch `master` gera um novo deploy automaticamente.
