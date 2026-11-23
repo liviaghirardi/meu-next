@@ -1,5 +1,7 @@
 # Recursos do Next.js — Projeto 04
 
+🔗 **Site publicado:** https://meu-next-livia.vercel.app
+
 Landing page feita com **Next.js (App Router)** para a atividade de Frameworks Front-end do SENAI.
 A página apresenta os principais recursos do Next.js. Cada recurso tem a sua própria página de detalhes.
 
