@@ -1,0 +1,54 @@
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.botao,
+.ativo {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.botao:hover {
+  border-color: var(--accent);
+}
+
+.ativo {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.contagem {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* Grade responsiva: 1 coluna no celular, 2 no tablet, 3 no desktop */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
