@@ -1,0 +1,54 @@
+.pagina {
+  padding-top: 40px;
+  padding-bottom: 64px;
+  max-width: 760px;
+}
+
+.voltar {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.voltar:hover {
+  text-decoration: underline;
+}
+
+.artigo {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: clamp(20px, 5vw, 40px);
+}
+
+.categoria {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.titulo {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 8px 0 12px;
+}
+
+.resumo {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.descricao {
+  line-height: 1.7;
+}
+
+.rota {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
