@@ -1,0 +1,36 @@
+.header {
+  background: var(--surface-dark);
+  color: #fff;
+}
+
+.nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.links a {
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
+.links a:hover {
+  opacity: 1;
+}
